@@ -11,7 +11,7 @@ version: 2.1
 jobs:
   scan_app:
     docker:
-      - image: cimg/node:12
+      - image: cimg/node:19.5.0
     steps:
       - run : echo $test_env_var
       - run : echo 'export MY_VAR=$test_env_var' >> "$BASH_ENV"
