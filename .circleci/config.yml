@@ -20,6 +20,8 @@ jobs:
 workflows:
   setup-workflow:
     jobs:
-      - generate-config
+      - generate-config: 
+          context: 
+            - my-context
       
       #test
