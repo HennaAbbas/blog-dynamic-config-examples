@@ -23,5 +23,10 @@ workflows:
       - generate-config: 
           context: 
             - my-context
+  another-workflow:
+    jobs:
+      - generate-config: 
+          context: 
+            - my-context            
       
       #test
