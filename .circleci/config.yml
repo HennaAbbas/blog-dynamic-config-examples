@@ -28,5 +28,4 @@ workflows:
       - generate-config: 
           context: 
             - my-context            
-      
-      #test
+
